@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+    <title>NBA社区</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="NBA社区">
+    <meta name="description" content="yyyyyyyy">
+
+  <!--全局样式-->
+  <link th:include="common/static :: style" />
+</head>
+<body>
+<!--头-->
+<div th:include="common/templates :: header"></div>
+<!--<div th:include="common/templates :: header-nav"></div>-->
+
+<div class="layui-container fly-marginTop">
+	<div class="fly-panel">
+	  <div class="fly-none">
+        <h2><i class="iconfont icon-tishilian"></i></h2>
+	    <p th:text="${msg}"></p>
+	  </div>
+	</div>
+</div>
+
+
+<!--尾-->
+<div th:include="common/templates :: footer"></div>
+</body>
